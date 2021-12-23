@@ -10,7 +10,7 @@
 
 #### Prioritisation of the steps towards completing the task:
 
-- An outline of the course of action, by following an agile iterative approach, is central to the project outcome. Most important element: set up the development environment by creating a Nodejs server, storing the IMDB ids as a data object, and then display this on the client side with Reactjs. SQLite and Express.js to be used as the database layers when managing the sqldump file. Template literals can then be constructed to pass in the movie data properties from the associated api. 
+- An outline of the course of action, by following an agile iterative approach, is central to the project outcome. Most important element: set up development environment by creating a Nodejs server storing the IMDB ids as a data object, and then display this on the client side with Reactjs. SQLite and Express.js to be used as the database layers when managing the sqldump file. Template literals can then be constructed to pass in the movie data properties from the associated api. 
 
 - The next stage of the development cycle is to add the option for users to add or remove the list of favourite movies. This can be done using vanilla javascript DOM manipulation. 
 
