@@ -1,34 +1,21 @@
-# Lumina Learning Ltd - Graduate Software Developer Assignment
-We kindly ask you to solve the task below. By solving and submitting this assignment you provide us with insights in how you solve real-world problems. What we will be looking at are topics such as: choice of technology, structuring of code, selection of 3rd party libraries, documentation etc.
+# Lumina Learning Ltd - Assignment Documentation 
 
+## User Guide 
 
-## The task
-- Build a service with PHP or JavaScript (NodeJs as webserver) as the server side language
-- Use MySQL, MariaDB, PostgreSQL, SQL Server or SQLite as the database
+## Method Evaluation 
 
-Build an SPA (Single Page Application) that shows everyone's favourite movies from database, it should at least show movie Title, Poster, and Plot synopsis using [OMDb API](https://www.omdbapi.com) or any other public movie API that supports IMDb ID (e.g. tt8526872)
+### A decision on the techologies to be used
 
-It should also be able to add or remove list of favourite movies.
+- It seemed that a Javascript based application would be the best way forward. The reasons for this were twofold: firstly, it would be easier to handle the data between the frontend and backend using Nodejs in concurrence with Reactjs. Furthermore, these were web technologies that I was most familiar with.   
 
-Please use the data set provided in the SQL dump in this repo as a base.
-You can change original asset that you think will make the solution better.
-You are allowed to use any library or framework to help you with the task.
+### Prioritisation of the steps towards completing the task
 
-## Bonus task
-You are not required to complete all of the bonus tasks, but great if you do! We may want to discuss your approach to the bonus tasks during interview so please think of your approach to these challenges even if you do not complete them.
+- An outline of the course of action, by following an agile iterative approach, is central to the project outcome. Most important element: set up the development environment by creating a Nodejs server storing the IMDB ids, as a data object, and then display this on the client side with Reactjs. SQLite and Express.js to be used as the database layers when managing the sqldump file. Template literals can then be constructed to pass in the movie data properties from the associated api. 
 
-- Use client side framework such as AngularJS, Angular, ReactJS, Vue, etc.
-- Add simple authentication for any user (or all users) and only authenticated user could view or edit their favourite movies. You could adjust the database structure if needed.
-- Add unit tests
-- Serve your solution somewhere on cloud hosting solution e.g. Heroku, DigitalOcean, etc. (just use the free tier one if available, we don't expect you to spend any money for hosting)
-- Any other improvement or modification (please add it into the readme and explain your reasoning of the improvement or modification)
+- The next stage of the development cycle is to add the option for users to add or remove the list of favourite movies. This can be done using vanilla javascript DOM manipulation. 
 
-## Expectations
-Make a copy of this repo. Solve the task. Push your code to a public repo, and send us the link as a reply to our email.
+- The final step of least concern are the bonus tasks of the assignment. These include adding user authentication (login system) and deploying the application to Heroku. 
 
-Your solution should include a short readme describing your assumptions regarding the task, technology choice, your solution, how to use/test it and any final considerations such as known errors, limitation, something you struggle with, next steps, security concerns etc. 
+## Reflection on limitations & setbacks of initial solution
 
-Don't worry we are not expecting this thing to be perfect.
-
-## Note
-To get an API key in [OMDb API](https://www.omdbapi.com), you will need to register with your name and email address. If you do not consent to give such details to OMDb API, please let us know and we will happily give you an API key for this assignment.
+## Reflection on next steps, improvements, and modifications
