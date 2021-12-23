@@ -1,0 +1,24 @@
+{
+  "name": "interview-assignment",
+  "version": "1.0.0",
+  "description": "## User Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carsor22/interview-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carsor22/interview-assignment/issues"
+  },
+  "homepage": "https://github.com/carsor22/interview-assignment#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "sqlite3": "^4.2.0"
+  }
+}
