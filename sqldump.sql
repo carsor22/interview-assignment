@@ -11,4 +11,4 @@ INSERT INTO users (id,firstName,lastName,favourite_movies)
         (2,'Camilla','Sayer','tt4154756,tt10515848,tt0120575'),
         (3,'Ganesh','Zentai','tt0287871,tt2975590,tt0103776,tt4116284,tt2313197'),
         (4,'Vivien','Straub','tt0926084,tt0417741'),
-        (5,'Bernardita','Bishop','tt0389860');
+        (5,'Bernardita','Bishop','tt0389860')

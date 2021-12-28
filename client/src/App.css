@@ -3,3 +3,10 @@ body {
   color: white;
 }
 
+p{
+  margin-left: 3em;
+  padding-right:30em;
+}
+h2 {
+  margin-left: 2em;
+}

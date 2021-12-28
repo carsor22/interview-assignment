@@ -15,16 +15,17 @@
 
 #### Prioritisation of the steps towards completing the task:
 
-- An outline of the course of action, by following the agile iterative approach, is central to the project outcome. 
+- An outline of the course of action, by following the agile iterative approach, is central to the project outcome. Most important element: set up Nodejs development environment on the back end. Create a SQLite3 database on the server to store the data objects from the sqldump file. An advantage of SQLite3 is that it serves as a stand alone database that does not require a full client-server environment: this is ideal for small projects with a small amount of data. Also setup routing endpoints for API fetch with a proxy key to manage client requests. 
 
-        1. Most important element: set up Nodejs development environment on the back end. Create a SQLite3 database on the server to store the data objects from the sqldump file. An advantage of SQLite3 is that it serves as a stand alone database that does not require a full client-server environment: this is ideal for small projects with a small amount of data. Also setup routing endpoints for API fetch with a proxy key to manage client requests. 
+- Access database json data from express api endpoint and render through Reactjs on client side using state management. Design the UI once favourite movie data is passed in successfully. The next stage of the development cycle is to add the functionality option for users to add or remove the list of favourite movies from a dynamic state component.  
 
-        2. Access database json data from express api endpoint and render through Reactjs on client side using state management. Design the UI once favourite movie data is passed in successfully. 
+- The final step of least concern are the bonus tasks of the assignment. These include adding user authentication (login system) and deploying the application to Heroku. 
 
-        3. The next stage of the development cycle is to add the functionality option for users to add or remove the list of favourite movies. This can be done using vanilla javascript DOM manipulation. 
-
-        4. The final step of least concern are the bonus tasks of the assignment. These include adding user authentication (login system) and deploying the application to Heroku. 
 
 ## Reflection on challenges, limitations & setbacks of initial solution:
+
+- There were some challenges over the course of the assignment. 
+
+
 
 ## Reflection on next steps, improvements, and modifications:
