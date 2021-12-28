@@ -5,9 +5,7 @@ import MovieList from './components/MovieList';
 
 function App() {
   
-  //Call movielist component and pass properties into it by creating a statefile called movies, then call setter for the movies state object.
-
-  //State object should hold movie properties from database instead of manual input. This is where the database json properties holding the API data needs to be called from. 
+  //Call movielist component and pass properties into it by creating a statefile called movies
 
   const [movies] = useState([
 
@@ -81,8 +79,7 @@ function App() {
       Poster: 'https://m.media-amazon.com/images/M/MV5BMTA1MTUxNDY4NzReQTJeQWpwZ15BbWU2MDE3ODAxNw@@._V1_SX300.jpg',
       Plot: "A workaholic architect finds a universal remote that allows him to fast-forward and rewind to different parts of his life. Complications arise when the remote starts to overrule his choices."
     },
- ]);
-
+ ])
       //const getMovieRequest = async () => {
       //const url = 'http://www.omdbapi.com/?i=tt0848228&apikey=6500ad71';
 
