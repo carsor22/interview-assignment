@@ -2,13 +2,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import React, { useState } from 'react'; 
 import MovieList from './components/MovieList';
+import AddFavourites from './components/AddFavourites';
+import RemoveFavourites from './components/RemoveFavourites';
 
 function App() {
   
   //Call movielist component and pass properties into it by creating a statefile called movies
 
+  //display favourites in own component onclick
+  const [favourites, setFavourites] = useState([]);
+  
   const [movies] = useState([
-
     { 
       Title: 'The Avengers',
       Poster: 'https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
@@ -79,7 +83,7 @@ function App() {
       Poster: 'https://m.media-amazon.com/images/M/MV5BMTA1MTUxNDY4NzReQTJeQWpwZ15BbWU2MDE3ODAxNw@@._V1_SX300.jpg',
       Plot: "A workaholic architect finds a universal remote that allows him to fast-forward and rewind to different parts of his life. Complications arise when the remote starts to overrule his choices."
     },
- ])
+ ]);
       //const getMovieRequest = async () => {
       //const url = 'http://www.omdbapi.com/?i=tt0848228&apikey=6500ad71';
 
@@ -97,17 +101,40 @@ function App() {
           //getMovieRequest(); 
         //}, [])
 
+  //Add and remove movies - add to cuurent state held above to copy. Then update state of array with favourite films. 
+
+  const addFavouriteMovie = (movie) => {
+    const newFavouriteList = [...favourites, movie]
+    setFavourites(newFavouriteList);
+  };
+
+  //filter out array from currnet favourite list and set into state 
+  
+  const removeFavouriteMovie = (movie) => {
+    const newFavouriteList = favourites.filter((favourite) => favourite !== movie)
+    setFavourites(newFavouriteList);
+  };
+  
   return (
 
     //movies list component to pass movies into 
     //apply bootstrap styles to jsx 
+    //render addfavourites component as overlay
+    //pass function into movielist that is called when movielist item clicked 
     
-    <div className ='movie-app'>
+    <div className ='container-fluid'>
+      <h1>Movies List</h1>
       <div className='row'>
-        <MovieList movies = {movies}  />
+        <MovieList movies = {movies} handleFavouritesClick={addFavouriteMovie}favouriteComponent = {AddFavourites} />
+      </div>
+      <h1>Favourites</h1>
+      <div className='row' >
+        <MovieList movies = {favourites} 
+        handleFavouritesClick={addFavouriteMovie} favouriteComponent = {AddFavourites} 
+        handleFavouritesClick={removeFavouriteMovie} favouriteComponent = {RemoveFavourites} />
       </div>
     </div>
-  );
-}
+ );
+};
 
 export default App;
