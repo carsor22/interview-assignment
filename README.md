@@ -23,11 +23,15 @@
 
 ## Reflection on challenges & comparison to initial solution:
 
+<<<<<<< HEAD
 - There were some challenges over the course of the assignment. I was able to display the movie properies on the client side and design a basic UI, however, this was done manually without fetching the data from the SQLite3 database that was created. This was a limitation as the application layer on the express server, holding the IMDBid json object, was not being targeted to then fetch the API properties (title, poster, plot) from a URL response to be passed down into a useEffect function.
 
 - It was understood that the API properties from the url could be associated with the IMBDid, within the database, and passed down into the component state. This was attempted, although the logic chain was incomplete to direct the data flow within the state object. It was clear that the state object should hold the movie properties from an API call and render them into the client instead of through a manual input. 
 
 - The Bootstrap classes used for the layout (scroll) worked to an extent. I tried using vanilla CSS to work around this, however, I could not find the specific command to close the gap between the row items. This meant that the column layout was preferable. 
+=======
+- There were some challenges over the course of the assignment. I was able to display the movie properties on the client side and design a basic UI, however, this was done manually without fetching the data from the SQLite3 database that was created. This was a limitation as the application layer on the express server, holding the IMDBid json object, was not being targeted to then fetch the API properties (title, poster, plot) from a URL response to be passed down into a useEffect function. It was understood that the API properties from the url could be associated with the IMBDid, within the database, and passed down into the component state. This was attempted, although the logic chain was incomplete to direct the data flow within the state object. It was clear that the state object should hold the movie properties from an API call and render them into the client instead of through a manual input. 
+>>>>>>> f12e342f24971c4e70001d82401ec195ce60550c
 
 
 ## Reflection on next steps & improvements
